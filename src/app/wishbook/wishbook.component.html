@@ -1,0 +1,50 @@
+<div class="container top-row">
+    <div class="row">
+        <div class="col-md-6 border">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div *ngFor="let image of images; let k = index"
+                     [ngClass]="k == 0? 'carousel-item active': 'carousel-item'">
+                      <img class="d-block w-100"  src="{{image}}">
+                    </div>                    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="col-md-6 border">
+            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div *ngFor="let wish of wishes; let k = index"
+                     [ngClass]="k == 0? 'carousel-item active': 'carousel-item'">
+                      <span class="d-block w-100 wish-font cursive text-center">"{{wish.message}}"</span>
+                    </div>                    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>                              
+        </div>
+
+    </div>
+    <div class="row justify-content-center row-m-2 row-bottom-margin">
+        <div class="input-group">
+            <textarea [(ngModel)]="defaultValue" #text_area class="form-control" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+                <button type="button" class="btn btn-success float-right" (click)="buttonUnClicked(text_area.value)">Add your wish</button>
+            </div>
+          </div>
+    </div>
+</div>

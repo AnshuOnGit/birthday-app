@@ -1,1 +1,196 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url(//fonts.googleapis.com/css?family=Pinyon+Script);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene);
+.border{
+    border-radius: 10px;
+}
+
+#upper{
+    height: 10%;
+}
+
+.card{
+    border: 10px solid purple;
+    padding-bottom: 4em;
+    height: 60%;
+    border-image-source: url(flowers.PNG);
+    border-image-repeat: repeat;
+    border-image-slice: 45;
+}
+
+
+.header1{
+    background-color:rgb(229, 238, 243);
+}
+
+.outer-card{
+    padding-left: 6em;
+    padding-right: 6em;
+    background-color: rgb(233,190, 210);
+}
+
+.greeting-line{
+    text-align: center;
+}
+
+.cursive{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 5em;
+}
+
+@media screen and (min-width: 601px) {
+    .when-font{
+        font-size: 2em;
+        font-family:monospace;
+        color: purple;
+    }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .when-font{
+            font-size: 1em;
+            font-family: monospace;
+            color: purple;
+        }
+        
+        }
+
+        @media screen and (min-width: 601px) {
+            .where-font{
+                font-size: 2em;
+                font-family:monospace;
+                color: purple;
+            }
+            }
+            
+            @media screen and (max-width: 600px) {
+                .where-font{
+                    font-size: 1em;
+                    font-family: monospace;
+                    color: purple;
+                }
+                
+                }
+               
+
+@media screen and (min-width: 601px) {
+.is-font{
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: purple;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .is-font{
+        font-size: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: purple;
+    }
+    
+    }
+@media screen and (min-width: 601px) {
+.is-font{
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:purple;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .turn-font{
+        font-size: 3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:   rgb(82, 133, 28);
+    }
+    
+    }
+    @media screen and (min-width: 601px) {
+        .turn-font{
+            font-size: 4em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(82, 133, 28);
+        }
+        }
+              
+.one-font{
+    font-family: 'Chau Philomene One', sans-serif;;
+    color: #fcd963;
+    font-size: 10em;
+}
+
+
+
+.lower-row{
+    margin-top: 5em;
+}
+
+.top-star-row{
+    margin-top: 2em;
+}
+.navbar-z{
+    background-color:#990000;
+    position:fixed;  
+    z-index:-1; /*Add this*/
+    width:100%;
+    height:50px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:50px;
+    top:0px;
+  }
+
+.card-firstblock{
+    margin-top: 5em;
+}
+
+.card-secondblock{
+    margin-top: 10em;
+}
+
+svg {
+    color: red
+  }
+
+.star-place{
+    margin-top: 2em;
+    align-content: left;
+}  
+.icon{
+    height: 45px;
+    width: 40px;
+}
+.one-wish-font{
+    font-size: 300px;
+    color: plum;
+}
+
+html, body {
+    height: 100%; /*Fixes the height to 100% of the viewport*/
+  }
+  body {
+    padding-top: 87px; /*50px for the height of the navbar + 37px for the offset*/
+    padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+  }
+  .navbar-offset {
+      top: 37px; /*Offsets the top navbar 37px from the top of the viewport*/
+  }
+  .container-fluid.scrollable {
+    height: 100%; /*Sets the scrollable area to 100% of the viewport*/
+    overflow: auto; /*Allows the scrollable area to have a scrollbar based on the height of its content*/
+    background: #ccc;
+  }
+
+  .wish-font{
+      text-decoration-line: underline;
+      font-size: 5vmin;
+      text-decoration-color: #fcd963;
+      color: purple;
+  }
+
+  button{
+      text-align: center;
+  }
